@@ -1,0 +1,21 @@
+name = input("Enter your Name:" )
+course = input("Enter the Course:")
+score1 = float(input("Enter Prelim Grade:"))
+score2 = float(input("Enter Midterm Grade:"))
+score3 = float(input("Enter Finals Grade:"))
+average = float((score1+score2+score3)/3)
+print("----------------------------------------")
+print("Name:" ,name)
+print("Course:",course)
+print("Average is {:.2f}".format(average))
+Happy = ('\U0001F600')
+Laugh = ('\U0001F606')
+Sad   = ("\U0001F62D")
+if average > 70:
+    print("Result:", Happy)
+elif average  == 70:
+    print("Result:", Laugh)
+elif average < 70:
+    print("Result:", Sad)
+
+
